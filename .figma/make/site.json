@@ -1,0 +1,10 @@
+{
+  "description": "An AI-driven platform providing early warnings and decision support for flash floods and landslides in hilly regions, enhancing safety through real-time data and community reports.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
