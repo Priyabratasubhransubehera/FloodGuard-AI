@@ -195,7 +195,7 @@ floodguard-ai/
 
 ## Design System
 
-Dark navy command center aesthetic — see `guidelines/Guidelines.md` for full tokens,
+Dark navy command center aesthetic — see `frontend/guidelines/Guidelines.md` for full tokens,
 typography, and component patterns.
 
 **Risk color scale** (always color + text label — never color alone):
