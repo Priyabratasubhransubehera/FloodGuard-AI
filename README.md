@@ -23,6 +23,9 @@ environmental data.
 git clone https://github.com/your-org/floodguard-ai.git
 cd floodguard-ai
 
+# Frontend commands run from the frontend category
+cd frontend
+
 # 2. Install dependencies
 pnpm install          # or: npm install
 
@@ -90,22 +93,18 @@ See `.env.example` for the full reference. Key variables:
 
 ```
 floodguard-ai/
-├── src/                        # React + TypeScript frontend
-│   ├── App.tsx                 # Router + app shell
-│   ├── index.css               # Tailwind v4 + Google Fonts + design tokens
-│   ├── data/mockData.ts        # Phase 1 simulation engine (all mock data)
-│   ├── components/
-│   │   ├── layout/             # Sidebar, TopNavbar, DegradedModeBanner, AIChatAssistant
-│   │   └── ui/                 # MetricCard, RiskGauge, RiskBadge, ShelterCapacityBar
-│   └── pages/                  # 16 pages (see below)
+├── frontend/                   # React + TypeScript frontend
+│   ├── src/                    # Application source
+│   ├── public/                 # Static assets and service worker
+│   ├── package.json
+│   └── Dockerfile.frontend
 ├── backend/
 │   ├── main.py                 # FastAPI app (Phase 2 skeleton)
 │   ├── requirements.txt
 │   ├── Dockerfile
 │   └── sql/seed.sql            # Postgres + PostGIS schema + seed data
-├── guidelines/Guidelines.md    # Design system reference
 ├── docker-compose.yml          # One-command full-stack run
-├── Dockerfile.frontend         # Frontend production image
+├── vercel.json                 # Frontend/backend deployment routing
 ├── .env.example                # Environment variable template
 └── README.md
 ```

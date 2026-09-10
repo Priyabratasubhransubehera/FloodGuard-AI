@@ -49,7 +49,7 @@ services:
   # ── React/Vite frontend ───────────────────────────────────────────────────
   frontend:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile.frontend
     container_name: floodguard_frontend
     restart: unless-stopped
