@@ -20,7 +20,7 @@ environmental data.
 
 ```bash
 # 1. Clone
-git clone https://github.com/your-org/floodguard-ai.git
+git clone https://github.com/psubhransubehera/floodguard-ai.git
 cd floodguard-ai
 
 # Frontend commands run from the frontend category
